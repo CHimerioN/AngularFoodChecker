@@ -1,0 +1,17 @@
+<div class="container">
+<div class="head">
+  <h1 mat-dialog-title>Szczegóły produktu</h1>
+</div>
+<div class="nutrition">
+  <ul>
+    <li><p>Nazwa Produktu: {{data.food.product_name}}</p></li>
+    <li><p>Kraj pochodzenia: {{data.food.countries}}</p></li>
+    <p>Wartość Odżywcza: </p><img class="image" src='{{data.food.image_nutrition_small_url}}' />
+    <p>Składniki: {{data.food.ingredients_text}} </p>
+    <p>Wskaźnik przetworzonej żywności (1- bez przetworzonej żywności, 4- bardzo przetworzone): </p>
+    <p><img src="https://static.openfoodfacts.org/images/attributes/nova-group-{{data.food.nova_group}}.svg"/></p>
+    <p><img class="grade" src='https://static.openfoodfacts.org/images/attributes/nutriscore-{{data.food.nutriscore_data.grade}}.svg' /></p>
+  </ul>
+</div>
+</div>
+
